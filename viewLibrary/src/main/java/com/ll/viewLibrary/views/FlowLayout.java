@@ -92,7 +92,7 @@ public class FlowLayout extends ViewGroup {
             int childViewMeasuredH = viewChild.getMeasuredHeight();
 
             //处理换行
-            if (lineUsedWidth + mHSpace + childViewMeasuredW > selfWidth) {
+            if (lineUsedWidth + mHSpace + childViewMeasuredW + paddingR > selfWidth) {
                 //存储行数据
                 allViews.add(lineViews);
                 allHeights.add(lineHeight);
